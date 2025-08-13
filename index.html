@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mood Mirror</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+    }
+
+    header {
+      padding: 50px 20px;
+      background-color: #333;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .buttons {
+      margin: 30px auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .buttons a {
+      padding: 15px 25px;
+      background-color: #555;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      transition: background 0.3s;
+    }
+
+    .buttons a:hover {
+      background-color: #777;
+    }
+
+    .mood-section {
+      min-height: 100vh;
+      padding: 60px 20px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+                                                                                           
+
+    }
+
+    .mood-section h2 {
+      font-size: 4rem;
+    }
+
+    .mood-section p {
+      font-size: 1.5rem;
+      max-width: 600px;
+      margin-top: 20px;
+    }
+    html{
+    scroll-behavior:smooth;
+    }
+
+    /* Mood backgrounds */
+    #happy { background: #ffe066; color: #333; }
+    #sad { background: #74b9ff; }
+    #calm { background: #81ecec; color: #333; }
+    #angry { background: #ff6b6b; }
+    #excited { background: #a29bfe; }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1> Mood Mirror</h1>
+    <p>Select your mood and see what reflects back at you!</p>
+    <div class="buttons">
+      <a href="#happy">😊 Happy</a>
+      <a href="#sad">😢 Sad</a>
+      <a href="#calm">🧘 Calm</a>
+      <a href="#angry">😠 Angry</a>
+      <a href="#excited">🤩 Excited</a>
+    </div>
+  </header>
+
+  <section id="happy" class="mood-section">
+    <h2>😊 Happy</h2>
+    <p>"Smile, it's free therapy."</p>
+  </section>
+
+  <section id="sad" class="mood-section">
+    <h2>😢 Sad</h2>
+    <p>"Tears are words the heart can’t say."</p>
+  </section>
+
+  <section id="calm" class="mood-section">
+    <h2>🧘 Calm</h2>
+    <p>"Peace begins with a deep breath."</p>
+  </section>
+
+  <section id="angry" class="mood-section">
+    <h2>😠 Angry</h2>
+    <p>"Speak when you're calm, not when you're angry."</p>
+  </section>
+
+  <section id="excited" class="mood-section">
+    <h2>🤩 Excited</h2>
+    <p>"Good things are coming!"</p>
+  </section>
+
+</body>
+</html>
